@@ -1,0 +1,476 @@
+/* =========================================
+   PROFESSIONAL POST JOB SECTION
+========================================= */
+
+.post-job-section {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.post-job-container {
+    width: min(1180px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.post-job-heading {
+    max-width: 650px;
+    margin-bottom: 38px;
+}
+
+.post-job-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 18px;
+
+    color: #6535e8;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+}
+
+.label-dot {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #6535e8;
+}
+
+.post-job-heading h2 {
+    margin: 0;
+
+    color: #111214;
+
+    font-size: clamp(38px, 4vw, 54px);
+    font-weight: 800;
+
+    line-height: 1;
+    letter-spacing: -2.2px;
+}
+
+.post-job-heading h2 span {
+    color: #17a57d;
+}
+
+.post-job-heading p {
+    max-width: 560px;
+
+    margin: 20px 0 0;
+
+    color: #66707d;
+
+    font-size: 17px;
+    line-height: 1.55;
+}
+
+
+/* =========================================
+   MAIN FORM CARD
+========================================= */
+
+.professional-job-form {
+    padding: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8f6ff 0%,
+            #ffffff 52%,
+            #f4fbf8 100%
+        );
+
+    border: 1px solid #e7e5ef;
+
+    border-radius: 26px;
+
+    box-shadow:
+        0 20px 55px rgba(28, 25, 45, 0.08);
+}
+
+
+/* =========================================
+   MAIN INPUT
+========================================= */
+
+.job-main-field {
+    padding-bottom: 28px;
+
+    border-bottom: 1px solid #e5e5e9;
+}
+
+.job-main-field label,
+.job-field label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #17181b;
+
+    font-size: 13px;
+    font-weight: 750;
+}
+
+.job-main-field input {
+    width: 100%;
+
+    padding: 15px 0;
+
+    border: 0;
+    outline: 0;
+
+    background: transparent;
+
+    color: #17181b;
+
+    font-size: 21px;
+    font-weight: 500;
+
+    box-sizing: border-box;
+}
+
+.job-main-field input::placeholder {
+    color: #9aa0aa;
+}
+
+
+/* =========================================
+   DETAILS
+========================================= */
+
+.job-details-grid {
+    display: grid;
+
+    grid-template-columns:
+        0.9fr
+        1.0fr
+        1fr
+        1fr
+        1fr;
+
+    gap: 0;
+
+    margin-top: 25px;
+}
+
+
+.job-field {
+    min-width: 0;
+
+    padding: 0 22px;
+
+    border-right: 1px solid #e3e4e8;
+}
+
+.field-value input {
+      width: 80px;
+
+    padding: 0;
+
+    border: 0;
+    outline: 0;
+
+    background: transparent;
+
+    color: #343942;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 650;
+}
+
+.job-field:first-child {
+    padding-left: 0;
+}
+
+.job-field:last-child {
+    padding-right: 0;
+    border-right: none;
+}
+
+
+/* =========================================
+   VALUES
+========================================= */
+
+.field-value {
+    color: #343942;
+
+    font-size: 14px;
+    font-weight: 550;
+
+    white-space: nowrap;
+}
+
+.location-value {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.location-symbol {
+    color: #17a57d;
+
+    font-size: 19px;
+}
+
+.field-separator {
+    margin: 0 5px;
+
+    color: #a0a4aa;
+}
+
+
+/* =========================================
+   SELECT
+========================================= */
+
+.job-field select {
+    width: 100%;
+
+    padding: 0;
+    padding-right: 18px;
+
+    border: 0;
+    outline: 0;
+
+    background: transparent;
+
+    color: #343942;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 550;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   BUDGET
+========================================= */
+
+.budget-value {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    color: #343942;
+
+    font-size: 14px;
+    font-weight: 650;
+}
+
+.budget-value span {
+    color: #6d7480;
+}
+
+.budget-value input {
+    width: 80px;
+
+    padding: 0;
+
+    border: 0;
+    outline: 0;
+
+    background: transparent;
+
+    color: #343942;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 650;
+}
+
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.job-form-bottom {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-top: 28px;
+    padding-top: 24px;
+
+    border-top: 1px solid #e5e5e9;
+}
+
+.form-note {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #69727d;
+
+    font-size: 13px;
+}
+
+.form-note span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 19px;
+    height: 19px;
+
+    border-radius: 50%;
+
+    background: #e8f8f2;
+
+    color: #149873;
+
+    font-size: 11px;
+    font-weight: 900;
+}
+
+
+/* =========================================
+   POST BUTTON
+========================================= */
+
+.professional-post-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    min-width: 155px;
+    height: 52px;
+
+    padding: 0 22px;
+
+    border: none;
+    border-radius: 14px;
+
+    background: #111214;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 14px;
+    font-weight: 750;
+
+    cursor: pointer;
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        background .2s ease;
+}
+
+.professional-post-btn span {
+    font-size: 18px;
+}
+
+.professional-post-btn:hover {
+    background: #292a2d;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, .14);
+}
+
+.professional-post-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 950px) {
+
+    .job-details-grid {
+        grid-template-columns: repeat(3, 1fr);
+
+        row-gap: 25px;
+    }
+
+    .job-field:nth-child(3) {
+        border-right: none;
+    }
+
+    .job-field:nth-child(4),
+    .job-field:nth-child(5) {
+        padding-top: 5px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    .post-job-section {
+        padding: 65px 0;
+    }
+
+    .post-job-container {
+        width: calc(100% - 32px);
+    }
+
+    .post-job-heading h2 {
+        letter-spacing: -1.5px;
+    }
+
+    .post-job-heading p {
+        font-size: 15px;
+    }
+
+    .professional-job-form {
+        padding: 22px;
+
+        border-radius: 20px;
+    }
+
+    .job-details-grid {
+        display: flex;
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+    .job-field,
+    .job-field:first-child,
+    .job-field:last-child {
+        padding: 17px 0;
+
+        border-right: none;
+        border-bottom: 1px solid #e5e5e9;
+    }
+
+    .job-field:last-child {
+        border-bottom: none;
+    }
+
+    .job-form-bottom {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .professional-post-btn {
+        width: 100%;
+    }
+}

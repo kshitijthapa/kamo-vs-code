@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a job</title>
+    <link rel="stylesheet" href="postajob.css">
+</head>
+<body>
+    <section class="post-job-section" id="post-job">
+
+    <div class="post-job-container">
+
+        <!-- Header -->
+        <div class="post-job-heading">
+
+            <div class="post-job-label">
+                <span class="label-dot"></span>
+                POST A JOB
+            </div>
+
+            <h2>
+                Need a hand?
+                <span>Post it.</span>
+            </h2>
+
+            <p>
+                Tell us what you need, where and when you need it.
+                We'll help you find someone nearby.
+            </p>
+
+        </div>
+
+
+        <!-- Form -->
+        <div class="professional-job-form">
+
+            <!-- Main job -->
+            <div class="job-main-field">
+
+                <label for="jobTitle">
+                    What do you need?
+                </label>
+
+                <input
+                    type="text"
+                    id="jobTitle"
+                    placeholder="e.g. Help me move furniture"
+                >
+
+            </div>
+
+
+            <!-- Details -->
+            <div class="job-details-grid">
+
+                <!-- Location -->
+                <div class="job-field">
+
+                    <label>Where?</label>
+
+                    <div class="field-value location-value">
+                        <span class="location-symbol">⌖</span>
+                       <select id="location"><option>Select City</option><option>Kathmandu</option><option>Lalitpur</option><option>Bhaktapur</option><option>Pokhara</option> <option>Bharatpur</option> <option>Tikapur</option> <option>Biratnagar</option> <option>Birgunj</option><option>Kohalpur</option> <option>Nepalgunj</option><option>Butwal</option> <option>Dharan</option> <option>Itahari</option><option>Hetauda</option> <option>Dhangadhi</option> <option>Janakpur</option> <option>Ghorahi</option> <option>Tulsipur</option> <option>Other location</option></select>
+                    </div>
+
+                </div>
+
+
+                <!-- When -->
+                <div class="job-field">
+
+                    <label>When?</label>
+
+                    <div class="field-value">
+                    <span class="clock-symbol">◷</span>
+                    <input type="text"
+                            id="JobTime"
+                         placeholder="e.g. 3:00 PM">
+                    </div>
+
+                </div>
+
+
+                <!-- Duration -->
+                <div class="job-field">
+
+                    <label>How long?</label>
+
+                    <select>
+                        <option>1 hour</option>
+                        <option selected>2 hours</option>
+                        <option>3 hours</option>
+                        <option>4+ hours</option>
+                    </select>
+
+                </div>
+
+
+                <!-- Distance -->
+                <div class="job-field">
+
+                    <label>Distance</label>
+
+                    <select>
+                        <option>Within 2 km</option>
+                        <option selected>Within 5 km</option>
+                        <option>Within 10 km</option>
+                        <option>Anywhere</option>
+                    </select>
+
+                </div>
+
+
+                <!-- Budget -->
+                <div class="job-field">
+
+                    <label>Budget</label>
+
+                    <div class="budget-value">
+                        <span>Rs.</span>
+
+                        <input
+                            type="number"
+                            value="1000"
+                            min="0"
+                        >
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Bottom -->
+            <div class="job-form-bottom">
+
+                <div class="form-note">
+                    <span>✓</span>
+                    You only pay when the job is completed.
+                </div>
+
+                <button
+                    type="button"
+                    class="professional-post-btn"
+                >
+                    Post a Job
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+</body>
+</html>
