@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SROT — Find Work</title>
+
+  <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+  <a class="brand" href="#">
+    <span class="logo">S</span>
+
+    <span>
+      <b>SROT</b>
+      <small>Work that fits your time</small>
+    </span>
+  </a>
+
+  <nav>
+    <a class="active" href="../dashboard/Worker-dashboard.html">Find Work</a>
+    <a href="../Application/worker-applications.html">My Applications</a>
+    <a href="../saved jobs/savedjob.html">Saved Jobs</a>
+    <a href="#messages">Messages</a>
+  </nav>
+
+  <div class="user">
+
+    <button class="bell" aria-label="Notifications">
+  <span class="material-symbols-outlined">notifications_none</span>
+</button>
+
+    <button id="profile">
+      <img src="https://i.pravatar.cc/80?img=12">
+      Sanish Karki⌄
+    </button>
+
+  </div>
+
+</header>
+
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <nav class="side">
+
+      <a class="active" href="../dashboard/Worker-dashboard.html">
+        <span class="material-symbols-outlined">explore</span>
+        <span>Discover</span>
+      </a>
+
+      <a href="../Application/worker-applications.html" class="sidebar-item">
+        <span class="material-symbols-outlined">assignment</span>
+        <span>Applications</span>
+      </a>
+
+      <a href="../saved jobs/savedjob.html">
+       <span class="material-symbols-outlined">bookmark</span>
+        <span>Saved Jobs</span>
+      </a>
+
+      <a href="#messages">
+        <span class="material-symbols-outlined">chat_bubble</span>
+        <span>Messages</span>
+      </a>
+
+      <a href="#earnings">
+        <span class="material-symbols-outlined">account_balance_wallet</span>
+        <span>Earnings</span>
+      </a>
+
+      <a href="#availability">
+        <span class="material-symbols-outlined">schedule</span>
+        <span>Availability</span>
+      </a>
+
+      <a href="#profile">
+        <span class="material-symbols-outlined">person</span>
+        <span>Profile</span>
+      </a>
+
+      <a href="#settings">
+        <span class="material-symbols-outlined">settings</span>
+        <span>Settings</span>
+      </a>
+
+    </nav>
+
+
+    <div class="safety">
+
+      <strong>♢</strong>
+
+      <b>Safety first</b>
+
+      <p>
+        SROT protects you.
+        Learn how to keep your community safe.
+      </p>
+
+      <a href="#">
+        Learn more →
+      </a>
+
+    </div>
+
+  </aside>
+
+
+  <!-- MAIN CONTENT -->
+  <main id="discover">
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <div class="heroText">
+
+        <h1>
+          Find work that<br>
+          fits <span>your time.</span>
+        </h1>
+
+        <p>
+          Find short-term jobs near you based on location,
+          <br>
+          time, distance and skills.
+        </p>
+
+      </div>
+
+
+      <!-- MAP VISUAL -->
+      <div class="map">
+
+        <i></i>
+
+        <div></div>
+
+      </div>
+
+
+      <!-- SEARCH BAR -->
+      <div class="search">
+
+        <label>
+
+          <b>What work?</b>
+
+        
+           <input id="Text"  placeholder="e.g. Delivery">
+          
+
+        </label>
+
+
+        <label>
+
+          <b>Location</b>
+
+          <input id="Text"  placeholder="Kathmandu">
+          
+
+        </label>
+
+
+        <label>
+
+          <b>When?</b>
+
+         <input id="Text"  placeholder="Anytime">
+          
+
+        </label>
+
+
+        <label>
+
+          <b>Distance</b>
+
+           <input id="Text"  placeholder="within 5 km">
+          
+
+        </label>
+
+
+        <button class="find" id="find">
+          Find Jobs
+        </button>
+
+      </div>
+
+
+      <!-- POPULAR SEARCHES -->
+      <div class="popular">
+
+        <span>Popular searches:</span>
+
+        <button>Moving</button>
+        <button>Cleaning</button>
+        <button>Delivery</button>
+        <button>Event Helper</button>
+        <button>Shop Helper</button>
+        <button>Paper work</button>
+        <button>Bike rent</button>
+        <button>Rental truck</button>
+        <button>Cargo vans</button>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- JOBS + RIGHT SIDEBAR -->
+    <div class="columns">
+
+
+      <!-- JOB LIST -->
+      <section class="jobs">
+
+        <header class="sectionHead">
+
+          <div>
+
+            <h2>
+              Recommended for you
+            </h2>
+
+            <p>
+              Jobs that match your location,
+              skills and availability
+            </p>
+
+          </div>
+
+          <a href="#">
+            View all jobs →
+          </a>
+
+        </header>
+
+
+        <div id="jobList"></div>
+
+
+        <button class="more" id="more">
+          View more jobs　⌄
+        </button>
+
+      </section>
+
+
+
+      <!-- RIGHT SIDEBAR -->
+      <aside class="right">
+
+
+        <!-- PROFILE PROGRESS -->
+        <div class="card">
+
+          <header>
+
+            <b>
+              Profile progress
+            </b>
+
+            <strong>
+              70% complete
+            </strong>
+
+          </header>
+
+
+          <div class="progress">
+
+            <span>
+              70%
+            </span>
+
+            <div>
+
+              <b>
+                Complete your profile
+              </b>
+
+              <p>
+                to get more job matches
+                and build trust.
+              </p>
+
+              <a href="#">
+                Complete now →
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- AVAILABILITY -->
+        <div class="card" id="availability">
+
+          <header>
+
+            <b>
+              Your availability
+            </b>
+
+            <a href="#">
+              Edit
+            </a>
+
+          </header>
+
+
+          <div class="available">
+
+            ●
+
+            <span>
+
+              <b>
+                Available today
+              </b>
+
+              <small>
+                4:00 PM – 8:00 PM
+              </small>
+
+            </span>
+
+          </div>
+
+
+          <p class="detail">
+
+  <span class="detail-icon">➢</span>
+
+  <span class="detail-content">
+    <b>Preferred distance</b>
+    <small>Within 5 km</small>
+  </span>
+
+</p>
+
+          <p class="detail">
+
+  <span class="detail-icon">🗁</span>
+
+  <span class="detail-content">
+    <b>Work types</b>
+    <small>Moving, Delivery, Cleaning</small>
+  </span>
+
+</p>
+
+        </div>
+
+
+        <!-- ACTIVITY -->
+        <div class="card">
+
+          <header>
+
+            <b>
+              Your activity
+            </b>
+
+            <small>
+              This month
+            </small>
+
+          </header>
+
+
+          <div class="stats">
+
+            <span>
+              <b>12</b>
+              <small>Applications</small>
+            </span>
+
+            <span>
+              <b>2</b>
+              <small>Active Jobs</small>
+            </span>
+
+            <span>
+              <b>18</b>
+              <small>Completed</small>
+            </span>
+
+            <span>
+              <b>Rs. 24,500</b>
+              <small>Earnings</small>
+            </span>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- STAND OUT -->
+        <div class="standout">
+
+          <h3>
+            Stand out to clients
+          </h3>
+
+          <p>
+            ✓ Complete your profile
+          </p>
+
+          <p>
+            ✓ Add your skills
+          </p>
+
+          <p>
+            ✓ Verify your phone number
+          </p>
+
+          <p>
+            ✓ Add a profile photo
+          </p>
+
+          <button id="improve">
+            Improve profile
+          </button>
+
+        </div>
+
+      </aside>
+
+    </div>
+
+
+
+    <!-- CATEGORIES -->
+    <section class="categories">
+
+      <header class="sectionHead">
+
+        <h2>
+          Browse jobs by category
+        </h2>
+
+        <a href="#">
+          View all categories →
+        </a>
+
+      </header>
+
+
+      <div class="catgrid">
+
+        <button>
+          <span>📦</span>
+          <b>Moving & Carrying</b>
+          <small>23 jobs</small>
+        </button>
+
+
+        <button>
+          <span>🧹</span>
+          <b>Cleaning</b>
+          <small>18 jobs</small>
+        </button>
+
+
+        <button>
+          <span>🛵</span>
+          <b>Delivery & Errands</b>
+          <small>31 jobs</small>
+        </button>
+
+
+        <button>
+          <span>⛺</span>
+          <b>Event Help</b>
+          <small>12 jobs</small>
+        </button>
+
+
+        <button>
+          <span>🏪</span>
+          <b>Shop & Business Help</b>
+          <small>15 jobs</small>
+        </button>
+
+
+        <button>
+          <span>•••</span>
+          <b>Other Small Jobs</b>
+          <small>9 jobs</small>
+        </button>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- BOTTOM CTA -->
+    <section class="cta">
+
+      <strong>
+        ✓
+      </strong>
+
+      <div>
+
+        <h3>
+          Get hired faster
+        </h3>
+
+        <p>
+          Complete your profile,
+          add skills and keep your availability updated.
+        </p>
+
+      </div>
+
+      <button id="update">
+        Update Profile
+      </button>
+
+    </section>
+
+
+  </main>
+
+</div>
+
+
+<!-- TOAST -->
+<div id="toast"></div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

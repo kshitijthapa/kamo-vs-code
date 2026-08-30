@@ -1,0 +1,790 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SROT — My Applications</title>
+
+    <link rel="stylesheet" href="applications.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<!-- =========================
+     TOP NAVIGATION
+========================= -->
+
+<header class="topbar">
+
+    <div class="brand">
+        <div class="brand-logo">
+            <span>S</span>
+        </div>
+
+        <div class="brand-text">
+            <strong>SROT</strong>
+            <small>Work that fits your time</small>
+        </div>
+    </div>
+
+    <nav class="top-nav">
+
+        <a href="../dashboard/Worker-dashboard.html">
+            Find Work
+        </a>
+
+        <a href="../Application/worker-applications.html" class="active">
+            My Applications
+        </a>
+
+        <a href="../saved jobs/savedjob.html">
+            Saved Jobs
+        </a>
+
+        <a href="#">
+            Messages
+        </a>
+
+       
+
+    </nav>
+
+    <div class="top-right">
+
+        <button class="notification-btn" aria-label="Notifications">
+            
+           <span class="material-symbols-outlined">notifications_none</span>
+        </button>
+
+        <div class="user-profile">
+
+            <div class="avatar">
+                SK
+            </div>
+
+            <strong>Sanish Karki</strong>
+
+            <span class="chevron">⌄</span>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     MAIN LAYOUT
+========================= -->
+
+<div class="layout">
+
+
+    <!-- =========================
+         SIDEBAR
+    ========================= -->
+
+    <aside class="sidebar">
+
+        <nav class="side-nav">
+
+            <a href="../dashboard/Worker-dashboard.html" class="side-link">
+               <span class="material-symbols-outlined">explore</span>
+                <span>Discover</span>
+            </a>
+
+            <a href="../Application/worker-applications.html" class="side-link active">
+                <span class="material-symbols-outlined">assignment</span>
+                <span>Applications</span>
+            </a>
+
+            <a href="../saved jobs/savedjob.html" class="side-link">
+               <span class="material-symbols-outlined">bookmark</span>
+                <span>Saved Jobs</span>
+            </a>
+
+            <a href="#" class="side-link">
+              <span class="material-symbols-outlined">chat_bubble</span>
+                <span>Messages</span>
+                <span class="message-count">2</span>
+            </a>
+
+            <a href="#" class="side-link">
+               <span class="material-symbols-outlined">account_balance_wallet</span>
+                <span>Earnings</span>
+            </a>
+
+            <a href="#" class="side-link">
+              <span class="material-symbols-outlined">schedule</span>
+                <span>Availability</span>
+            </a>
+
+            <a href="#" class="side-link">
+              <span class="material-symbols-outlined">person</span>
+                <span>Profile</span>
+            </a>
+
+            <a href="#" class="side-link">
+               <span class="material-symbols-outlined">settings</span>
+                <span>Settings</span>
+            </a>
+
+        </nav>
+
+
+        <!-- SAFETY CARD -->
+
+        <div class="safety-card">
+
+            <div class="safety-icon">
+                <strong>♢</strong>
+            </div>
+
+            <h4>Safety first</h4>
+
+            <p>
+                SROT protects you.
+                Learn how we keep our
+                community safe.
+            </p>
+
+            <a href="#">
+                Learn more →
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================= -->
+
+    <main class="main-content">
+
+        <!-- PAGE HEADER -->
+
+        <section class="page-header">
+
+            <div>
+                <h1>My Applications</h1>
+
+                <p>
+                    Track the jobs you've applied for
+                    and manage your applications.
+                </p>
+            </div>
+
+            <button class="find-work-btn" id="findWorkBtn">
+                <span>＋</span>
+                Find More Work
+            </button>
+
+        </section>
+
+
+        <!-- =========================
+             APPLICATION STATISTICS
+        ========================= -->
+
+        <section class="stats-card">
+
+            <div class="stat">
+
+                <div class="stat-icon purple-icon">
+                    ▤
+                </div>
+
+                <div>
+                    <strong>12</strong>
+                    <span>Total Applications</span>
+                </div>
+
+            </div>
+
+
+            <div class="stat">
+
+                <div class="stat-icon orange-icon">
+                    ◷
+                </div>
+
+                <div>
+                    <strong>5</strong>
+                    <span>Pending</span>
+                </div>
+
+            </div>
+
+
+            <div class="stat">
+
+                <div class="stat-icon green-icon">
+                    ✓
+                </div>
+
+                <div>
+                    <strong>2</strong>
+                    <span>Accepted</span>
+                </div>
+
+            </div>
+
+
+            <div class="stat">
+
+                <div class="stat-icon blue-icon">
+                    ★
+                </div>
+
+                <div>
+                    <strong>3</strong>
+                    <span>Completed</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FILTERS
+        ========================= -->
+
+        <section class="filters">
+
+            <div class="filter-tabs">
+
+                <button class="filter-btn active" data-filter="all">
+                    All (12)
+                </button>
+
+                <button class="filter-btn" data-filter="pending">
+                    Pending (5)
+                </button>
+
+                <button class="filter-btn" data-filter="accepted">
+                    Accepted (2)
+                </button>
+
+                <button class="filter-btn" data-filter="completed">
+                    Completed (3)
+                </button>
+
+                <button class="filter-btn" data-filter="rejected">
+                    Rejected (2)
+                </button>
+
+                <button class="filter-btn" data-filter="withdrawn">
+                    Withdrawn (0)
+                </button>
+
+            </div>
+
+
+            <div class="search-box">
+
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    id="applicationSearch"
+                    placeholder="Search applications..."
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             APPLICATION LIST
+        ========================= -->
+
+        <section class="applications-list" id="applicationsList">
+
+
+            <!-- APPLICATION 1 -->
+
+            <article class="application-card" data-status="pending">
+
+                <div class="job-info">
+
+                    <div class="job-icon moving">
+                        📦
+                    </div>
+
+                    <div class="job-main">
+
+                        <h3>Furniture Moving</h3>
+
+                        <strong class="company">
+                            Home Relocation Services
+                            <span class="verified">✓</span>
+                        </strong>
+
+                        <span class="category">
+                            Moving & Carrying
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="job-location">
+
+                    <strong><span class="material-symbols-outlined">location_on</span> Lalitpur, Nepal</strong>
+
+                    <span>2.1 km away</span>
+
+                    <small>Applied 30 minutes ago</small>
+
+                </div>
+
+
+                <div class="job-time">
+
+                    <strong>◷ Today, 4:00 PM</strong>
+
+                    <span>~2 hours</span>
+
+                </div>
+
+
+                <div class="job-price">
+
+                    <strong>Rs. 1,000</strong>
+
+                    <span>Fixed price</span>
+
+                </div>
+
+
+                <div class="job-actions">
+
+                    <span class="status pending">
+                        Pending
+                    </span>
+
+                    <div class="action-buttons">
+
+                        <button class="outline-btn">
+                            View Job
+                        </button>
+
+                        <button
+                            class="withdraw-btn"
+                            data-job="Furniture Moving"
+                        >
+                            Withdraw
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- APPLICATION 2 -->
+
+            <article class="application-card" data-status="accepted">
+
+                <div class="job-info">
+
+                    <div class="job-icon event">
+                        🗓️
+                    </div>
+
+                    <div class="job-main">
+
+                        <h3>Event Setup Helper</h3>
+
+                        <strong class="company">
+                            ABC Events
+                            <span class="verified">✓</span>
+                        </strong>
+
+                        <span class="category">
+                            Event Help
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="job-location">
+
+                    <strong><span class="material-symbols-outlined">location_on</span> Kathmandu, Nepal</strong>
+
+                    <span>3.4 km away</span>
+
+                    <small>Applied 1 hour ago</small>
+
+                </div>
+
+
+                <div class="job-time">
+
+                    <strong>◷ Tomorrow, 9:00 AM</strong>
+
+                    <span>~3 hours</span>
+
+                </div>
+
+
+                <div class="job-price">
+
+                    <strong>Rs. 1,500</strong>
+
+                    <span>Fixed price</span>
+
+                </div>
+
+
+                <div class="job-actions">
+
+                    <span class="status accepted">
+                        Accepted
+                    </span>
+
+                    <div class="action-buttons">
+
+                        <button class="outline-btn">
+                            View Job
+                        </button>
+
+                        <button class="message-btn">
+                            Message Client
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- APPLICATION 3 -->
+
+            <article class="application-card" data-status="pending">
+
+                <div class="job-info">
+
+                    <div class="job-icon delivery">
+                        🛵
+                    </div>
+
+                    <div class="job-main">
+
+                        <h3>Grocery Delivery</h3>
+
+                        <strong class="company">
+                            Sasto Mart
+                            <span class="verified">✓</span>
+                        </strong>
+
+                        <span class="category">
+                            Delivery & Errands
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="job-location">
+
+                    <strong><span class="material-symbols-outlined">location_on</span> Kathmandu, Nepal</strong>
+
+                    <span>1.2 km away</span>
+
+                    <small>Applied 2 hours ago</small>
+
+                </div>
+
+
+                <div class="job-time">
+
+                    <strong>◷ Today, 6:00 PM</strong>
+
+                    <span>~1 hour</span>
+
+                </div>
+
+
+                <div class="job-price">
+
+                    <strong>Rs. 400</strong>
+
+                    <span>Fixed price</span>
+
+                </div>
+
+
+                <div class="job-actions">
+
+                    <span class="status pending">
+                        Pending
+                    </span>
+
+                    <div class="action-buttons">
+
+                        <button class="outline-btn">
+                            View Job
+                        </button>
+
+                        <button
+                            class="withdraw-btn"
+                            data-job="Grocery Delivery"
+                        >
+                            Withdraw
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- APPLICATION 4 -->
+
+            <article class="application-card" data-status="completed">
+
+                <div class="job-info">
+
+                    <div class="job-icon cleaning">
+                        🧹
+                    </div>
+
+                    <div class="job-main">
+
+                        <h3>Home Cleaning</h3>
+
+                        <strong class="company">
+                            Sunita Shrestha
+                            <span class="verified">✓</span>
+                        </strong>
+
+                        <span class="category">
+                            Cleaning
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="job-location">
+
+                    <strong><span class="material-symbols-outlined">location_on</span> Bhaktapur, Nepal</strong>
+
+                    <span>2.8 km away</span>
+
+                    <small>Applied 3 hours ago</small>
+
+                </div>
+
+
+                <div class="job-time">
+
+                    <strong>◷ Tomorrow, 10:00 AM</strong>
+
+                    <span>~3 hours</span>
+
+                </div>
+
+
+                <div class="job-price">
+
+                    <strong>Rs. 1,200</strong>
+
+                    <span>Fixed price</span>
+
+                </div>
+
+
+                <div class="job-actions">
+
+                    <span class="status completed">
+                        Completed
+                    </span>
+
+                    <div class="action-buttons">
+
+                        <button class="outline-btn">
+                            View Job
+                        </button>
+
+                        <button class="rate-btn">
+                            Rate Client
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- APPLICATION 5 -->
+
+            <article class="application-card" data-status="rejected">
+
+                <div class="job-info">
+
+                    <div class="job-icon shop">
+                        🏪
+                    </div>
+
+                    <div class="job-main">
+
+                        <h3>Shop Assistant</h3>
+
+                        <strong class="company">
+                            Local Store
+                            <span class="verified">✓</span>
+                        </strong>
+
+                        <span class="category">
+                            Shop & Business Help
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="job-location">
+
+                    <strong><span class="material-symbols-outlined">location_on</span> Kathmandu, Nepal</strong>
+
+                    <span>4.1 km away</span>
+
+                    <small>Applied yesterday</small>
+
+                </div>
+
+
+                <div class="job-time">
+
+                    <strong>◷ Sat, 10:00 AM</strong>
+
+                    <span>~4 hours</span>
+
+                </div>
+
+
+                <div class="job-price">
+
+                    <strong>Rs. 1,600</strong>
+
+                    <span>Fixed price</span>
+
+                </div>
+
+
+                <div class="job-actions">
+
+                    <span class="status rejected">
+                        Rejected
+                    </span>
+
+                    <div class="action-buttons">
+
+                        <button class="outline-btn">
+                            View Job
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+
+        <!-- =========================
+             EMPTY SEARCH MESSAGE
+        ========================= -->
+
+        <div class="no-results" id="noResults">
+
+            <div>⌕</div>
+
+            <h3>No applications found</h3>
+
+            <p>
+                Try another search or select a different status.
+            </p>
+
+        </div>
+
+
+        <!-- =========================
+             PAGINATION
+        ========================= -->
+
+        <div class="pagination">
+
+            <span>
+                Showing 1 to 5 of 12 applications
+            </span>
+
+            <div class="pages">
+
+                <button class="page-arrow">
+                    ‹
+                </button>
+
+                <button class="page active">
+                    1
+                </button>
+
+                <button class="page">
+                    2
+                </button>
+
+                <button class="page">
+                    3
+                </button>
+
+                <button class="page-arrow">
+                    ›
+                </button>
+
+            </div>
+
+            <select id="pageSize">
+                <option>Show 5 per page</option>
+                <option>Show 10 per page</option>
+                <option>Show 20 per page</option>
+            </select>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script src="applications.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SROT — Saved Jobs</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+  
+    <link rel="stylesheet" href="savedjob.css">
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     TOP NAVIGATION
+========================= -->
+
+<header class="topbar">
+
+    <div class="brand">
+
+        <div class="logo">
+            S
+        </div>
+
+        <div>
+            <b>SROT</b>
+            <small>Work that fits your time</small>
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <a href="../dashboard/Worker-dashboard.html">
+            Find Work
+        </a>
+
+        <a href="../Application/worker-applications.html">
+            My Applications
+        </a>
+
+        <a href="../saved jobs/savedjob.html" class="active">
+            Saved Jobs
+        </a>
+
+        <a href="#">
+            Messages
+        </a>
+
+    </nav>
+
+
+    <div class="user">
+
+        <button class="bell" title="Notifications">
+            <i data-lucide="bell"></i>
+        </button>
+
+        <button class="profile-button">
+
+            <img
+                src="pictures/profile.jpg"
+                alt="Profile"
+            >
+
+            <span>
+                Sanish Karki
+            </span>
+
+            <i data-lucide="chevron-down"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================
+     MAIN LAYOUT
+========================= -->
+
+<div class="layout">
+
+
+    <!-- =========================
+         SIDEBAR
+    ========================= -->
+
+    <aside class="sidebar">
+
+        <div class="side">
+
+            <a href="../dashboard/Worker-dashboard.html">
+
+                 <span class="material-symbols-outlined">explore</span>
+                <span>
+                    Discover
+                </span>
+
+            </a>
+
+
+            <a href="../Application/worker-applications.html">
+
+                <span class="material-symbols-outlined">assignment</span>
+                <span>
+                    Applications
+                </span>
+
+            </a>
+
+
+            <a href="../saved jobs/savedjob.html" class="active">
+
+                <span class="material-symbols-outlined">bookmark</span>
+
+                <span>
+                    Saved Jobs
+                </span>
+
+                <span class="nav-count">
+                    5
+                </span>
+
+            </a>
+
+
+            <a href="#">
+
+                 <span class="material-symbols-outlined">chat_bubble</span>
+
+                <span>
+                    Messages
+                </span>
+                 
+
+            </a>
+
+
+            <a href="#">
+
+                <span class="material-symbols-outlined">account_balance_wallet</span>
+
+                <span>
+                    Earnings
+                </span>
+
+            </a>
+
+
+            <a href="#">
+
+                <span class="material-symbols-outlined">schedule</span>
+
+                <span>
+                    Availability
+                </span>
+
+            </a>
+
+
+            <a href="#">
+
+                <span class="material-symbols-outlined">person</span>
+                <span>
+                    Profile
+                </span>
+
+            </a>
+
+
+            <a href="#">
+
+                 <span class="material-symbols-outlined">settings</span>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+        </div>
+
+
+        <!-- SAFETY CARD -->
+
+        <div class="safety">
+
+            <div class="safety-icon">
+               <strong>♢</strong>
+            </div>
+
+            <b>
+                Safety first
+            </b>
+
+            <p>
+                SROT protects you. Learn how to keep
+                your community safe.
+            </p>
+
+            <a href="#">
+                Learn more →
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================= -->
+
+    <main>
+
+
+        <!-- PAGE HEADER -->
+
+        <section class="page-header">
+
+            <div>
+
+                <div class="eyebrow">
+                    <i data-lucide="heart"></i>
+                    Your saved opportunities
+                </div>
+
+                <h1>
+                    Saved jobs
+                </h1>
+
+                <p>
+                    Keep track of work you're interested in
+                    and apply when you're ready.
+                </p>
+
+            </div>
+
+
+            <a
+                href="../dashboard/Worker-dashboard.html"
+                class="find-work-btn"
+            >
+                <i data-lucide="search"></i>
+                Find more work
+            </a>
+
+        </section>
+
+
+
+        <!-- =========================
+             SEARCH + FILTER BAR
+        ========================= -->
+
+        <section class="toolbar">
+
+
+            <div class="search-box">
+
+                <i data-lucide="search"></i>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search your saved jobs..."
+                >
+
+            </div>
+
+
+            <div class="filter-buttons">
+
+                <button
+                    class="filter active"
+                    data-filter="all"
+                >
+                    All
+                    <span>5</span>
+                </button>
+
+
+                <button
+                    class="filter"
+                    data-filter="new"
+                >
+                    New
+                </button>
+
+
+                <button
+                    class="filter"
+                    data-filter="urgent"
+                >
+                    Urgent
+                </button>
+
+
+                <button
+                    class="filter"
+                    data-filter="closing"
+                >
+                    Closing soon
+                </button>
+
+            </div>
+
+
+            <div class="sort-box">
+
+                <span>
+                    Sort by
+                </span>
+
+                <select id="sortSelect">
+
+                    <option value="newest">
+                        Recently saved
+                    </option>
+
+                    <option value="pay">
+                        Highest pay
+                    </option>
+
+                    <option value="distance">
+                        Nearest
+                    </option>
+
+                </select>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             RESULTS HEADER
+        ========================= -->
+
+        <div class="results-head">
+
+            <div>
+
+                <h2>
+                    Your saved jobs
+                </h2>
+
+                <p id="resultText">
+                    5 jobs saved
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =========================
+             JOB LIST
+        ========================= -->
+
+        <section
+            class="saved-list"
+            id="savedJobs"
+        >
+
+
+            <!-- JOB 1 -->
+
+            <article
+                class="saved-job"
+                data-title="Furniture Moving"
+                data-category="new"
+                data-pay="1000"
+                data-distance="2.1"
+                data-saved="5"
+            >
+
+                <div class="job-main">
+
+
+                    <div class="job-icon icon-green">
+                       📦
+                    </div>
+
+
+                    <div class="job-info">
+
+                        <div class="job-title-row">
+
+                            <h3>
+                                Furniture Moving
+                            </h3>
+
+                            <span class="badge new">
+                                New
+                            </span>
+
+                        </div>
+
+
+                        <p class="company">
+                            Home Relocation Services
+                            <span class="verified">✓</span>
+                        </p>
+
+
+                        <div class="job-details">
+
+                            <span>
+                                <i data-lucide="map-pin"></i>
+                                Lalitpur, Nepal
+                            </span>
+
+                            <span>
+                                <i data-lucide="calendar-days"></i>
+                                Today, 4:00 PM
+                            </span>
+
+                            <span>
+                                <i data-lucide="clock-3"></i>
+                                ~2 hours
+                            </span>
+
+                            <span>
+                                <i data-lucide="users"></i>
+                                2 people needed
+                            </span>
+
+                        </div>
+
+
+                        <div class="tags">
+
+                            <span>
+                                Moving & Carrying
+                            </span>
+
+                            <span>
+                                Within 5 km
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="job-price">
+
+                        <strong>
+                            Rs. 1,000
+                        </strong>
+
+                        <small>
+                            Fixed price
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="job-footer">
+
+                    <div class="saved-time">
+
+                        <i data-lucide="bookmark-check"></i>
+
+                        Saved 30 min ago
+
+                    </div>
+
+
+                    <div class="job-actions">
+
+                        <button
+                            class="remove-save"
+                            title="Remove from saved jobs"
+                        >
+                            <i data-lucide="heart"></i>
+                        </button>
+
+                        <button class="details-btn">
+                            View Details
+                        </button>
+
+                        <button class="apply-btn">
+                            Apply Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- JOB 2 -->
+
+            <article
+                class="saved-job"
+                data-title="Event Helper"
+                data-category="urgent"
+                data-pay="1500"
+                data-distance="3.4"
+                data-saved="4"
+            >
+
+                <div class="job-main">
+
+
+                    <div class="job-icon icon-purple">
+                        🗓️
+                    </div>
+
+
+                    <div class="job-info">
+
+                        <div class="job-title-row">
+
+                            <h3>
+                                Event Helper
+                            </h3>
+
+                            <span class="badge urgent">
+                                Urgent
+                            </span>
+
+                        </div>
+
+
+                        <p class="company">
+                            ABC Events
+                            <span class="verified">✓</span>
+                        </p>
+
+
+                        <div class="job-details">
+
+                            <span>
+                                <i data-lucide="map-pin"></i>
+                                Kathmandu
+                            </span>
+
+                            <span>
+                                <i data-lucide="calendar-days"></i>
+                                Tomorrow, 9:00 AM
+                            </span>
+
+                            <span>
+                                <i data-lucide="clock-3"></i>
+                                ~3 hours
+                            </span>
+
+                            <span>
+                                <i data-lucide="users"></i>
+                                3 people needed
+                            </span>
+
+                        </div>
+
+
+                        <div class="tags">
+
+                            <span>
+                                Event Help
+                            </span>
+
+                            <span>
+                                Within 5 km
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="job-price">
+
+                        <strong>
+                            Rs. 1,500
+                        </strong>
+
+                        <small>
+                            Fixed price
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="job-footer">
+
+                    <div class="saved-time">
+
+                        <i data-lucide="bookmark-check"></i>
+
+                        Saved yesterday
+
+                    </div>
+
+
+                    <div class="job-actions">
+
+                        <button
+                            class="remove-save"
+                            title="Remove from saved jobs"
+                        >
+                            <i data-lucide="heart"></i>
+                        </button>
+
+                        <button class="details-btn">
+                            View Details
+                        </button>
+
+                        <button class="apply-btn">
+                            Apply Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- JOB 3 -->
+
+            <article
+                class="saved-job"
+                data-title="Grocery Pickup & Delivery"
+                data-category="new"
+                data-pay="400"
+                data-distance="1.2"
+                data-saved="3"
+            >
+
+                <div class="job-main">
+
+
+                    <div class="job-icon icon-pink">
+                        🛵
+                    </div>
+
+
+                    <div class="job-info">
+
+                        <div class="job-title-row">
+
+                            <h3>
+                                Grocery Pickup & Delivery
+                            </h3>
+
+                            <span class="badge new">
+                                New
+                            </span>
+
+                        </div>
+
+
+                        <p class="company">
+                            Sasto Mart
+                            <span class="verified">✓</span>
+                        </p>
+
+
+                        <div class="job-details">
+
+                            <span>
+                                <i data-lucide="map-pin"></i>
+                                Kathmandu
+                            </span>
+
+                            <span>
+                                <i data-lucide="calendar-days"></i>
+                                Today, 6:00 PM
+                            </span>
+
+                            <span>
+                                <i data-lucide="clock-3"></i>
+                                ~1 hour
+                            </span>
+
+                            <span>
+                                <i data-lucide="users"></i>
+                                1 person needed
+                            </span>
+
+                        </div>
+
+
+                        <div class="tags">
+
+                            <span>
+                                Delivery & Errands
+                            </span>
+
+                            <span>
+                                Within 5 km
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="job-price">
+
+                        <strong>
+                            Rs. 400
+                        </strong>
+
+                        <small>
+                            Fixed price
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="job-footer">
+
+                    <div class="saved-time">
+
+                        <i data-lucide="bookmark-check"></i>
+
+                        Saved 2 hours ago
+
+                    </div>
+
+
+                    <div class="job-actions">
+
+                        <button
+                            class="remove-save"
+                            title="Remove from saved jobs"
+                        >
+                            <i data-lucide="heart"></i>
+                        </button>
+
+                        <button class="details-btn">
+                            View Details
+                        </button>
+
+                        <button class="apply-btn">
+                            Apply Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- JOB 4 -->
+
+            <article
+                class="saved-job"
+                data-title="Home Cleaning"
+                data-category="urgent"
+                data-pay="1200"
+                data-distance="2.8"
+                data-saved="2"
+            >
+
+                <div class="job-main">
+
+
+                    <div class="job-icon icon-blue">
+                        🧹
+                    </div>
+
+
+                    <div class="job-info">
+
+                        <div class="job-title-row">
+
+                            <h3>
+                                Home Cleaning
+                            </h3>
+
+                            <span class="badge urgent">
+                                Urgent
+                            </span>
+
+                        </div>
+
+
+                        <p class="company">
+                            Sunita Shrestha
+                            <span class="verified">✓</span>
+                        </p>
+
+
+                        <div class="job-details">
+
+                            <span>
+                                <i data-lucide="map-pin"></i>
+                                Bhaktapur, Nepal
+                            </span>
+
+                            <span>
+                                <i data-lucide="calendar-days"></i>
+                                Tomorrow, 10:00 AM
+                            </span>
+
+                            <span>
+                                <i data-lucide="clock-3"></i>
+                                ~3 hours
+                            </span>
+
+                            <span>
+                                <i data-lucide="users"></i>
+                                1 person needed
+                            </span>
+
+                        </div>
+
+
+                        <div class="tags">
+
+                            <span>
+                                Cleaning
+                            </span>
+
+                            <span>
+                                Within 5 km
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="job-price">
+
+                        <strong>
+                            Rs. 1,200
+                        </strong>
+
+                        <small>
+                            Fixed price
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="job-footer">
+
+                    <div class="saved-time">
+
+                        <i data-lucide="bookmark-check"></i>
+
+                        Saved 3 hours ago
+
+                    </div>
+
+
+                    <div class="job-actions">
+
+                        <button
+                            class="remove-save"
+                            title="Remove from saved jobs"
+                        >
+                            <i data-lucide="heart"></i>
+                        </button>
+
+                        <button class="details-btn">
+                            View Details
+                        </button>
+
+                        <button class="apply-btn">
+                            Apply Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- JOB 5 -->
+
+            <article
+                class="saved-job"
+                data-title="Shop Helper"
+                data-category="closing"
+                data-pay="800"
+                data-distance="4.5"
+                data-saved="1"
+            >
+
+                <div class="job-main">
+
+
+                    <div class="job-icon icon-orange">
+                         🏪
+                    </div>
+
+
+                    <div class="job-info">
+
+                        <div class="job-title-row">
+
+                            <h3>
+                                Shop Helper
+                            </h3>
+
+                            <span class="badge closing">
+                                Closing soon
+                            </span>
+
+                        </div>
+
+
+                        <p class="company">
+                            Local Grocery Store
+                            <span class="verified">✓</span>
+                        </p>
+
+
+                        <div class="job-details">
+
+                            <span>
+                                <i data-lucide="map-pin"></i>
+                                Kathmandu
+                            </span>
+
+                            <span>
+                                <i data-lucide="calendar-days"></i>
+                                Saturday, 8:00 AM
+                            </span>
+
+                            <span>
+                                <i data-lucide="clock-3"></i>
+                                ~4 hours
+                            </span>
+
+                            <span>
+                                <i data-lucide="users"></i>
+                                2 people needed
+                            </span>
+
+                        </div>
+
+
+                        <div class="tags">
+
+                            <span>
+                                Shop Helper
+                            </span>
+
+                            <span>
+                                Within 5 km
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="job-price">
+
+                        <strong>
+                            Rs. 800
+                        </strong>
+
+                        <small>
+                            Fixed price
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="job-footer">
+
+                    <div class="saved-time">
+
+                        <i data-lucide="bookmark-check"></i>
+
+                        Saved yesterday
+
+                    </div>
+
+
+                    <div class="job-actions">
+
+                        <button
+                            class="remove-save"
+                            title="Remove from saved jobs"
+                        >
+                            <i data-lucide="heart"></i>
+                        </button>
+
+                        <button class="details-btn">
+                            View Details
+                        </button>
+
+                        <button class="apply-btn">
+                            Apply Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+
+
+        <!-- EMPTY STATE -->
+
+        <section
+            class="empty-state"
+            id="emptyState"
+        >
+
+            <div class="empty-icon">
+                <i data-lucide="heart-off"></i>
+            </div>
+
+            <h2>
+                No saved jobs
+            </h2>
+
+            <p>
+                Jobs you save will appear here so you can
+                come back and apply when you're ready.
+            </p>
+
+            <a href="worker-dashboard.html">
+                <i data-lucide="search"></i>
+                Find work
+            </a>
+
+        </section>
+
+
+
+        <!-- BOTTOM TIP -->
+
+        <section class="saved-tip">
+
+            <div class="tip-icon">
+                ✓
+            </div>
+
+            <div>
+
+                <strong>
+                    Keep your options open
+                </strong>
+
+                <p>
+                    Save jobs you're interested in and
+                    compare them before applying.
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+
+<!-- TOAST -->
+
+<div id="toast">
+    Job removed from saved jobs.
+</div>
+
+
+<script src="saved-jobs.js"></script>
+
+</body>
+</html>

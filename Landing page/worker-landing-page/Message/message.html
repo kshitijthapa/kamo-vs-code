@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>SROT — Messages</title>
+
+    <!-- FONT -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- LUCIDE ICONS -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link
+        rel="stylesheet"
+        href="message.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     TOP NAVIGATION
+========================= -->
+
+<header class="topbar">
+
+    <div class="brand">
+
+        <div class="logo">
+            S
+        </div>
+
+        <div>
+
+            <b>SROT</b>
+
+            <small>
+                Work that fits your time
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <a href="worker-dashboard.html">
+            Find Work
+        </a>
+
+        <a href="worker-application.html">
+            My Applications
+        </a>
+
+        <a href="saved-jobs.html">
+            Saved Jobs
+        </a>
+
+        <a
+            href="messages.html"
+            class="active"
+        >
+            Messages
+        </a>
+
+    </nav>
+
+
+    <div class="user">
+
+        <button class="bell">
+            <i data-lucide="bell"></i>
+        </button>
+
+
+        <button class="profile-button">
+
+            <img
+                src="pictures/profile.jpg"
+                alt="Profile"
+            >
+
+            <span>
+                Sanish Karki
+            </span>
+
+            <i data-lucide="chevron-down"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================
+     MAIN LAYOUT
+========================= -->
+
+<div class="layout">
+
+
+    <!-- =========================
+         LEFT SIDEBAR
+    ========================= -->
+
+    <aside class="sidebar">
+
+        <div>
+
+
+            <nav class="side">
+
+                <a href="worker-dashboard.html">
+
+                    <i data-lucide="compass"></i>
+
+                    <span>
+                        Discover
+                    </span>
+
+                </a>
+
+
+                <a href="worker-application.html">
+
+                    <i data-lucide="file-check-2"></i>
+
+                    <span>
+                        Applications
+                    </span>
+
+                </a>
+
+
+                <a href="saved-jobs.html">
+
+                    <i data-lucide="bookmark"></i>
+
+                    <span>
+                        Saved Jobs
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="messages.html"
+                    class="active"
+                >
+
+                    <i data-lucide="message-square"></i>
+
+                    <span>
+                        Messages
+                    </span>
+
+                    <strong class="nav-count">
+                        3
+                    </strong>
+
+                </a>
+
+
+                <a href="#">
+
+                    <i data-lucide="wallet"></i>
+
+                    <span>
+                        Earnings
+                    </span>
+
+                </a>
+
+
+                <a href="#">
+
+                    <i data-lucide="calendar-days"></i>
+
+                    <span>
+                        Availability
+                    </span>
+
+                </a>
+
+
+                <a href="#">
+
+                    <i data-lucide="user-round"></i>
+
+                    <span>
+                        Profile
+                    </span>
+
+                </a>
+
+
+                <a href="#">
+
+                    <i data-lucide="settings"></i>
+
+                    <span>
+                        Settings
+                    </span>
+
+                </a>
+
+            </nav>
+
+
+            <!-- SAFETY -->
+
+            <div class="safety">
+
+                <strong>
+                    <i data-lucide="shield-check"></i>
+                </strong>
+
+                <b>
+                    Stay safe on SROT
+                </b>
+
+                <p>
+                    Keep communication and payments
+                    inside SROT for a safer experience.
+                </p>
+
+                <a href="#">
+                    Learn more →
+                </a>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =========================
+         MESSAGE PAGE
+    ========================= -->
+
+    <main>
+
+
+        <!-- PAGE HEADER -->
+
+        <div class="page-header">
+
+            <div>
+
+                <h1>
+                    Messages
+                </h1>
+
+                <p>
+                    Chat with clients and people you work with.
+                </p>
+
+            </div>
+
+
+            <button class="new-message">
+
+                <i data-lucide="square-pen"></i>
+
+                New message
+
+            </button>
+
+        </div>
+
+
+
+        <!-- =========================
+             MESSAGES AREA
+        ========================= -->
+
+        <section class="messages-layout">
+
+
+            <!-- =========================
+                 CONVERSATION LIST
+            ========================= -->
+
+            <div class="conversation-panel">
+
+
+                <div class="conversation-top">
+
+                    <div class="search-box">
+
+                        <i data-lucide="search"></i>
+
+                        <input
+                            type="text"
+                            id="messageSearch"
+                            placeholder="Search messages..."
+                        >
+
+                    </div>
+
+
+                    <div class="message-tabs">
+
+                        <button
+                            class="tab active"
+                            data-filter="all"
+                        >
+                            All
+                        </button>
+
+                        <button
+                            class="tab"
+                            data-filter="unread"
+                        >
+                            Unread
+                        </button>
+
+                        <button
+                            class="tab"
+                            data-filter="archived"
+                        >
+                            Archived
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CONVERSATIONS -->
+
+                <div
+                    class="conversation-list"
+                    id="conversationList"
+                >
+
+
+                    <!-- CONVERSATION 1 -->
+
+                    <button
+                        class="conversation active"
+                        data-name="Rahul Sharma"
+                        data-status="unread"
+                    >
+
+                        <div class="avatar avatar-purple">
+                            RS
+
+                            <span class="online"></span>
+                        </div>
+
+
+                        <div class="conversation-content">
+
+                            <div class="conversation-name">
+
+                                <strong>
+                                    Rahul Sharma
+                                </strong>
+
+                                <small>
+                                    10:42 AM
+                                </small>
+
+                            </div>
+
+
+                            <p>
+                                Can you help move the sofa
+                                this afternoon?
+                            </p>
+
+
+                            <span class="conversation-job">
+                                Furniture Moving
+                            </span>
+
+                        </div>
+
+
+                        <span class="unread-dot"></span>
+
+                    </button>
+
+
+
+                    <!-- CONVERSATION 2 -->
+
+                    <button
+                        class="conversation"
+                        data-name="Priya Events"
+                        data-status="read"
+                    >
+
+                        <div class="avatar avatar-green">
+                            PE
+                        </div>
+
+
+                        <div class="conversation-content">
+
+                            <div class="conversation-name">
+
+                                <strong>
+                                    Priya Events
+                                </strong>
+
+                                <small>
+                                    Yesterday
+                                </small>
+
+                            </div>
+
+
+                            <p>
+                                Thanks for helping at the event!
+                            </p>
+
+
+                            <span class="conversation-job">
+                                Event Helper
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+
+                    <!-- CONVERSATION 3 -->
+
+                    <button
+                        class="conversation"
+                        data-name="Kathmandu Delivery"
+                        data-status="read"
+                    >
+
+                        <div class="avatar avatar-blue">
+                            KD
+                        </div>
+
+
+                        <div class="conversation-content">
+
+                            <div class="conversation-name">
+
+                                <strong>
+                                    Kathmandu Delivery
+                                </strong>
+
+                                <small>
+                                    Tue
+                                </small>
+
+                            </div>
+
+
+                            <p>
+                                The delivery location has changed.
+                            </p>
+
+
+                            <span class="conversation-job">
+                                Delivery
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+
+                    <!-- CONVERSATION 4 -->
+
+                    <button
+                        class="conversation"
+                        data-name="Anita Cleaning"
+                        data-status="read"
+                    >
+
+                        <div class="avatar avatar-pink">
+                            AC
+                        </div>
+
+
+                        <div class="conversation-content">
+
+                            <div class="conversation-name">
+
+                                <strong>
+                                    Anita Cleaning
+                                </strong>
+
+                                <small>
+                                    Mon
+                                </small>
+
+                            </div>
+
+
+                            <p>
+                                Are you available this weekend?
+                            </p>
+
+
+                            <span class="conversation-job">
+                                Cleaning
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+
+                    <!-- CONVERSATION 5 -->
+
+                    <button
+                        class="conversation"
+                        data-name="Bhatbhateni Helper"
+                        data-status="read"
+                    >
+
+                        <div class="avatar avatar-orange">
+                            BH
+                        </div>
+
+
+                        <div class="conversation-content">
+
+                            <div class="conversation-name">
+
+                                <strong>
+                                    Bhatbhateni Helper
+                                </strong>
+
+                                <small>
+                                    Sun
+                                </small>
+
+                            </div>
+
+
+                            <p>
+                                Your application has been reviewed.
+                            </p>
+
+
+                            <span class="conversation-job">
+                                Shop Helper
+                            </span>
+
+                        </div>
+
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 CHAT PANEL
+            ========================= -->
+
+            <div class="chat-panel">
+
+
+                <!-- CHAT HEADER -->
+
+                <header class="chat-header">
+
+                    <div class="chat-person">
+
+                        <div class="avatar avatar-purple">
+                            RS
+
+                            <span class="online"></span>
+                        </div>
+
+
+                        <div>
+
+                            <strong>
+                                Rahul Sharma
+                            </strong>
+
+                            <small>
+                                <span class="status-dot"></span>
+                                Online
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="chat-actions">
+
+                        <button title="Search">
+                            <i data-lucide="search"></i>
+                        </button>
+
+                        <button title="More">
+                            <i data-lucide="more-horizontal"></i>
+                        </button>
+
+                    </div>
+
+                </header>
+
+
+
+                <!-- JOB CONTEXT -->
+
+                <div class="job-context">
+
+                    <div class="context-icon">
+
+                        <i data-lucide="package"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            JOB
+                        </span>
+
+                        <strong>
+                            Furniture Moving
+                        </strong>
+
+                        <small>
+                            Lalitpur · Today · Rs. 1,000
+                        </small>
+
+                    </div>
+
+
+                    <button>
+                        View job
+                    </button>
+
+                </div>
+
+
+
+                <!-- CHAT MESSAGES -->
+
+                <div
+                    class="chat-messages"
+                    id="chatMessages"
+                >
+
+
+                    <div class="day-divider">
+                        <span>
+                            Today
+                        </span>
+                    </div>
+
+
+                    <!-- RECEIVED -->
+
+                    <div class="message received">
+
+                        <div class="message-avatar">
+                            RS
+                        </div>
+
+
+                        <div>
+
+                            <div class="bubble">
+
+                                Hi Sanish! Are you available
+                                to help move a sofa this afternoon?
+
+                            </div>
+
+                            <small>
+                                10:35 AM
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- SENT -->
+
+                    <div class="message sent">
+
+                        <div>
+
+                            <div class="bubble">
+
+                                Hi Rahul! Yes, I'm available.
+                                What time would you like me there?
+
+                            </div>
+
+                            <small>
+                                10:37 AM · Seen
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- RECEIVED -->
+
+                    <div class="message received">
+
+                        <div class="message-avatar">
+                            RS
+                        </div>
+
+
+                        <div>
+
+                            <div class="bubble">
+
+                                Around 4 PM should work.
+                                The location is near Jawalakhel.
+
+                            </div>
+
+                            <small>
+                                10:40 AM
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- RECEIVED -->
+
+                    <div class="message received">
+
+                        <div class="message-avatar">
+                            RS
+                        </div>
+
+
+                        <div>
+
+                            <div class="bubble">
+
+                                Can you bring one more person
+                                if possible?
+
+                            </div>
+
+                            <small>
+                                10:42 AM
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- MESSAGE COMPOSER -->
+
+                <div class="composer">
+
+                    <div class="composer-box">
+
+                        <textarea
+                            id="messageInput"
+                            rows="1"
+                            placeholder="Write a message..."
+                        ></textarea>
+
+
+                        <div class="composer-bottom">
+
+                            <div class="composer-tools">
+
+                                <button
+                                    title="Attach file"
+                                    id="attachBtn"
+                                >
+                                    <i data-lucide="paperclip"></i>
+                                </button>
+
+
+                                <button title="Add emoji">
+                                    <i data-lucide="smile"></i>
+                                </button>
+
+                            </div>
+
+
+                            <button
+                                class="send-btn"
+                                id="sendBtn"
+                            >
+
+                                <i data-lucide="send"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <small class="composer-note">
+                        Keep communication and payments on SROT.
+                    </small>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 DETAILS PANEL
+            ========================= -->
+
+            <aside class="details-panel">
+
+
+                <div class="details-header">
+
+                    <strong>
+                        Conversation details
+                    </strong>
+
+                    <button>
+                        <i data-lucide="x"></i>
+                    </button>
+
+                </div>
+
+
+                <!-- PERSON -->
+
+                <div class="person-card">
+
+                    <div class="large-avatar avatar-purple">
+                        RS
+
+                        <span class="online"></span>
+                    </div>
+
+                    <strong>
+                        Rahul Sharma
+                    </strong>
+
+                    <small>
+                        Client
+                    </small>
+
+                    <span class="verified-pill">
+                        <i data-lucide="badge-check"></i>
+                        Verified
+                    </span>
+
+                </div>
+
+
+
+                <!-- JOB -->
+
+                <div class="detail-section">
+
+                    <span class="detail-label">
+                        WORK
+                    </span>
+
+                    <strong>
+                        Furniture Moving
+                    </strong>
+
+                    <p>
+                        Help move furniture from a home
+                        in Lalitpur.
+                    </p>
+
+                </div>
+
+
+
+                <!-- LOCATION -->
+
+                <div class="detail-row">
+
+                    <i data-lucide="map-pin"></i>
+
+                    <div>
+
+                        <small>
+                            Location
+                        </small>
+
+                        <strong>
+                            Jawalakhel, Lalitpur
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- DATE -->
+
+                <div class="detail-row">
+
+                    <i data-lucide="calendar-days"></i>
+
+                    <div>
+
+                        <small>
+                            Schedule
+                        </small>
+
+                        <strong>
+                            Today · 4:00 PM
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PAYMENT -->
+
+                <div class="detail-row">
+
+                    <i data-lucide="wallet"></i>
+
+                    <div>
+
+                        <small>
+                            Budget
+                        </small>
+
+                        <strong>
+                            Rs. 1,000 · Fixed
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ACTIONS -->
+
+                <div class="detail-actions">
+
+                    <button class="outline-btn">
+                        <i data-lucide="briefcase-business"></i>
+                        View job
+                    </button>
+
+                    <button class="danger-btn">
+                        <i data-lucide="archive"></i>
+                        Archive conversation
+                    </button>
+
+                </div>
+
+
+            </aside>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+
+<script src="messages.js"></script>
+
+<script>
+    lucide.createIcons();
+</script>
+
+
+</body>
+
+</html>
